@@ -127,15 +127,12 @@ app.listem creates a live server that listens to all request continously other w
 
 
 
+BACKEND AND FORONT END CAN BE HOSTED TOGETHER
+BACKEND CAN SERVE FRONT END BUT THAT IS A BAD PRACTISE
+    - because you won't be able to make changes live
 
+backend is made to listen to the requests that are going to come from the frontend
+once it request the req it sends the responses but not in every case it has to make sure that it is a trusted source
+then the front end has the access to the response which is prespecifed in the backend
 
-
-
-
-
-
-
-
-
-
-
+PROXIES -- layer of security 

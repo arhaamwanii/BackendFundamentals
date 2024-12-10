@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "a basic app to deploy",
   "main": "index.js",
+  "type" : "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "starttwo": "node server.js"
   },
   "keywords": [
     "node",
