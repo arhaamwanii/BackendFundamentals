@@ -1,0 +1,130 @@
+two main components
+
+PROGRAMMING LANGUAGE
+java , php , golang , js , c++
+- all the processing is done here
+- mongoose is a library for js
+
+
+A DATABASE
+- mongo db , mySQL ,postgress , sqllite
+-ORM , ODM : used to interact with the data base
+- store the given data
+- show the given data 
+
+: backed can run on your device also
+: data base is always on different component
+
+: function runs in the backend 
+    - mainly we are going to write funtions
+    - asks db for stuff 
+    - check if the stuff matchs with db
+
+: going on a url causes a function to run
+: send back the resoponse
+: requests can come from anywhere
+
+
+ESPRESS : routing 
+MONGOOSE : used for Datbase
+
+Data comming - 
+File comming - video , audio...
+Third Part API - google login... 
+
+SRC DIRECTORY 
+- production -- .env 
+
+
+DIRECTORY STRUCTURE -- in general
+
+index file/main file -- entry point for application
+    - db is connected here
+app file -- configuration 
+    - cookie
+    - and stuff like that
+constant - when you have to restrict options
+
+
+DB DIRECTORY
+    - actuall code that connects to db
+    - index file is here
+
+MODELS
+    - srtrucuture to find data
+    - every libraray has differnt structure
+    - mongoose , prsisma
+
+CONTROLLERS
+    - functions -- fancy name for functions
+
+ROUTES 
+    - defines the possible url and  for what of those to give error
+
+
+MIDDLE WARE 
+
+UTILS
+    - utilites that we are going to have to use at a lot of places
+    - eg mail sending
+    - small functionality that are used everywhere 
+
+Computer/Mobile makes a request
+Server is always listening
+    /home
+    /login
+    /search
+
+EXPRESS does all this LISTENING
+EXPRESS sends the Response
+
+GET  req send by the browser
+
+NPM INIT
+    - intialized the intial file sturture
+    - creates the package.json
+
+SCRIPTS
+    - intializing scripts helps on server
+
+- express is a web framework
+- there are two types of imports that can be used - there function is basically the same
+
+
+- in express we mainly deal with response and request 
+- then there are different methods for each req and response
+
+- we can intiate a listener to a port and continue listening contiously
+- we can listen to specific req on a port
+
+.listen is used in general to start a server
+.get is used to listen to  a specific request : on a specific port 
+
+
+TAKING THIS APP TO PRODUCTION
+
+we have to hide some stuff that is very senstive
+- data base user name and password
+
+
+IT CAN BE DEPLOYED ON VARIOUS THINGS
+    - free tier was paid bacause the it was being used for crypto mining
+
+DIGITAL OCEAN
+HEROKU 
+RAILWAY 
+SEENODE
+RENDER
+CYCLIC.SH
+
+
+
+
+
+
+
+
+
+
+
+
