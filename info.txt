@@ -119,6 +119,17 @@ CYCLIC.SH
 
 
 
+EXPRESS - maily deals with req and resopnses 
+    - req contains a lot of Data
+    - we can send a json or text.. as a response
+
+app.listem creates a live server that listens to all request continously other wise there it will just run ones and die out this prevents that form happening
+
+
+
+
+
+
 
 
 
