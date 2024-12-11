@@ -136,3 +136,56 @@ once it request the req it sends the responses but not in every case it has to m
 then the front end has the access to the response which is prespecifed in the backend
 
 PROXIES -- layer of security 
+
+
+BACKEND
+
+    - it can be served with both next.js and express.js
+    - in case of express you have to host it seperately but in case of next.js don't have to host it speeprately 
+    - next.js makes it simpiler but also locks you 
+
+    - in next.js we can send the req and res directly by setting up of a folder named pages then pages then API
+    - INSIDE OF THIS API PAGE EVERY .JS file is a api endpoint
+    - then inside of that .js file we can setup the req and res things
+    
+    - while in express we we setup a simple file and insdide there we use express to setup the app 
+    - then we make it live by using .listen on that app which causes it run contiously and listen to the request 
+    - the we watch for get/-/-/ requests on a specific endpoint which we setup right there
+    - we can setup this endpoint right there in the .GET
+    - then whenever some one goes to this endpoint a specific request is made 
+    - there we we initante a new funtion this funtion has inbuilt req and res 
+    - req contains the request data from the user 
+    - usin the res.json , req.send we send the data back then 
+
+
+DATA MODELLNG 
+    - have to make the stucture of the data first what feature will require what data 
+    - what data will be taken from where
+
+HELPER
+    - prisma :: helps to store this data
+    - mongoose :: helps in data mondeling 
+    - connecting a db is different    
+
+    MODELS FOLDER
+- controller puts data in this models folder
+
+- models are written as .models.js
+- controllers are wirtten as .controller.js
+
+- schema = constraints of the data/format/orginization 
+
+        import mongoose from "mongoose";
+
+        const userSchema =  new mongoose.Schema({})
+
+        export const User = mongoose.model("user" , userSchema)
+
+        - these three lines are always the same 
+
+- mongoose gives the data a strucutre and requirent 
+
+        type : string , 
+        required : true ,
+        unique : true,
+        lowercase : true
