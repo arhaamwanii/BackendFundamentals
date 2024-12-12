@@ -19,5 +19,5 @@ const subToDoSchema = new mongoose.Schema({
 export const SubtoDo = mongoose.model("subtodo" , subToDoSchema)
 
 // two constants one to store the schema of the data 
-// second to store the actual model - which has the schema inside 
+// second to store the actual model - which has the s chema inside 
 // mongoose gives pre defined -- functions that are then used to fill in the data
