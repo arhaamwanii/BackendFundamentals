@@ -10,8 +10,26 @@ const productSchema = new mongoose.Schema({
         type : String
     },
     productImage : {
-        type : String 
+        type : String  //product image is a string beause the actaull image is stored in a cdn and the url is saved here
+    },
+    price : {
+        type : Number ,
+        default : 0
+    } , 
+    stock : {
+        default : 0 , 
+        type : Number 
+    }, 
+    category: {
+        type : mongoose.Schema.types.ObjectId , 
+        ref : "Category" ,
+        required : true 
+    }, 
+    owner : {
+        type : mongoose.Schema.Types.ObjectId , 
+        ref : "user"
     }
+
 } , {timestamps : true})
 
 export const Product = mongoose.model("product" , productSchema)
